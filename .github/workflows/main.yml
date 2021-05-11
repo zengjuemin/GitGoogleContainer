@@ -29,6 +29,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Docker pull and push
         run: |
-          docker pull k8s.gcr.io/ingress-nginx/controller:v0.35.0  
-          docker tag  k8s.gcr.io/ingress-nginx/controller:v0.35.0  ghcr.io/zengjuemin/ingress-nginx/controller:v0.35.0        
-          docker push ghcr.io/zengjuemin/ingress-nginx/controller:v0.35.0 
+          docker pull k8s.gcr.io/defaultbackend-amd64:1.5  
+          docker tag  k8s.gcr.io/defaultbackend-amd64:1.5  ghcr.io/zengjuemin/defaultbackend-amd64:1.5       
+          docker push ghcr.io/zengjuemin/defaultbackend-amd64:1.5 
